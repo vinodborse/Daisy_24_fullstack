@@ -4,6 +4,7 @@
 
 <web-app>
   <welcome-file-list>
+	  <welcome-file>school.jsp</welcome-file>
 	  <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
@@ -14,7 +15,7 @@
   
   <servlet-mapping>
 	  <servlet-name>a</servlet-name>
-	  <url-pattern>/msg</url-pattern>
+	  <url-pattern>/search</url-pattern>
   </servlet-mapping>
   
   <servlet>

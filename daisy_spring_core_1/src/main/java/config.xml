@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!--Teacher t = new Teacher();-->
+	<bean class="com.ts.Student" name="t"></bean>
+	
+	    <!--
+		    u1.setId(1);
+	    	u1.setName("Vinod");
+	    	u1.setAddress("Pune");
+    	-->
+
+	
+	<bean class="com.ts.User" name="usr">
+		<property name="id" value="1"></property>
+		<property name="name" value="Pappu"></property>
+		<property name="address" value="Pune"></property>
+	</bean>
+	
+	<!-- new User(1, "Vinod", "Pune"); -->
+	<bean class="com.ts.User" name="u2">
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="Aliya"></constructor-arg>
+		<constructor-arg value="Mumbai"></constructor-arg>
+	</bean>
+
+</beans>
